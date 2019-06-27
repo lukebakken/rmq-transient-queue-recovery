@@ -336,6 +336,9 @@
            options = #{user => <<"guest">>}}]
 ```
 
+
+### All nodes are up (`rmq1`, `rmq2` and `rmq3`)
+
 #### `rmq1`
 
 ``` erlang
