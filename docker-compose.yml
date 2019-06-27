@@ -1,0 +1,47 @@
+version: '3.5'
+
+services:
+  rmq1:
+    image: rabbitmq:3.7.15-management
+    hostname: rmq1
+    container_name: rmq1
+    ports:
+      - 5672:5672
+      - 5673:5673
+      - 15672:15672
+    volumes:
+      - ./data:/var/lib/rabbitmq/mnesia
+      - ./advanced.config:/etc/rabbitmq/advanced.config
+      - ./definitions.json:/var/lib/rabbitmq/definitions.json
+    environment:
+      - RABBITMQ_ERLANG_COOKIE=rabbit
+
+  rmq2:
+    image: rabbitmq:3.7.15-management
+    hostname: rmq2
+    container_name: rmq2
+    ports:
+      - 5572:5672
+      - 5573:5673
+      - 15572:15672
+    volumes:
+      - ./data:/var/lib/rabbitmq/mnesia
+      - ./advanced.config:/etc/rabbitmq/advanced.config
+      - ./definitions.json:/var/lib/rabbitmq/definitions.json
+    environment:
+      - RABBITMQ_ERLANG_COOKIE=rabbit
+
+  rmq3:
+    image: rabbitmq:3.7.15-management
+    hostname: rmq3
+    container_name: rmq3
+    ports:
+      - 5472:5672
+      - 5473:5673
+      - 15472:15672
+    volumes:
+      - ./data:/var/lib/rabbitmq/mnesia
+      - ./advanced.config:/etc/rabbitmq/advanced.config
+      - ./definitions.json:/var/lib/rabbitmq/definitions.json
+    environment:
+      - RABBITMQ_ERLANG_COOKIE=rabbit
