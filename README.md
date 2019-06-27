@@ -99,7 +99,7 @@
 
 8. Note `pid` reference did not change on nodes `rmq1` and `rmq3`
 
-    See "Queue states" section below for details.
+    See [Queue states](#queue-states) section below for details.
 
 9. Try to list queues on node `rmq1` (or `rmq3`)
 
