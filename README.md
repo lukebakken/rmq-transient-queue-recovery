@@ -131,7 +131,7 @@
 
 #### `rmq1`
 
-``erlang
+```erlang
 #amqqueue{name = #resource{virtual_host = <<"/">>,
                            kind = queue,name = <<"rmq-two-queue">>},
           durable = false,auto_delete = false,exclusive_owner = none,
@@ -154,11 +154,11 @@
           decorators = [],state = live,policy_version = 0,
           slave_pids_pending_shutdown = [],vhost = <<"/">>,
           options = #{user => <<"guest">>}}]
-``
+```
 
 #### `rmq2`
 
-``erlang
+```erlang
 #amqqueue{name = #resource{virtual_host = <<"/">>,
                            kind = queue,name = <<"rmq-two-queue">>},
           durable = false,auto_delete = false,exclusive_owner = none,
@@ -181,11 +181,11 @@
           decorators = [],state = live,policy_version = 0,
           slave_pids_pending_shutdown = [],vhost = <<"/">>,
           options = #{user => <<"guest">>}}]
-``
+```
 
 #### `rmq3`
 
-``erlang
+```erlang
 #amqqueue{name = #resource{virtual_host = <<"/">>,
                            kind = queue,name = <<"rmq-two-queue">>},
           durable = false,auto_delete = false,exclusive_owner = none,
@@ -208,7 +208,7 @@
           decorators = [],state = live,policy_version = 0,
           slave_pids_pending_shutdown = [],vhost = <<"/">>,
           options = #{user => <<"guest">>}}]
-``
+```
 
 
 
@@ -217,7 +217,7 @@
 
 #### `rmq1`
 
-`` erlang
+``` erlang
 #amqqueue{name = #resource{virtual_host = <<"/">>,
                            kind = queue,name = <<"rmq-two-queue">>},
           durable = false,auto_delete = false,exclusive_owner = none,
@@ -237,11 +237,11 @@
           decorators = [],state = live,policy_version = 0,
           slave_pids_pending_shutdown = [],vhost = <<"/">>,
           options = #{user => <<"guest">>}}]
-``
+```
 
 #### `rmq3`
 
-`` erlang
+``` erlang
 #amqqueue{name = #resource{virtual_host = <<"/">>,
                            kind = queue,name = <<"rmq-two-queue">>},
           durable = false,auto_delete = false,exclusive_owner = none,
@@ -261,13 +261,13 @@
           decorators = [],state = live,policy_version = 0,
           slave_pids_pending_shutdown = [],vhost = <<"/">>,
           options = #{user => <<"guest">>}}]
-``
+```
 
 ### `rmq2` and `rmq3` are down
 
 #### `rmq1`
 
-`` erlang
+``` erlang
 #amqqueue{name = #resource{virtual_host = <<"/">>,
                            kind = queue,name = <<"rmq-two-queue">>},
           durable = false,auto_delete = false,exclusive_owner = none,
@@ -286,13 +286,13 @@
           state = live,policy_version = 0,
           slave_pids_pending_shutdown = [],vhost = <<"/">>,
           options = #{user => <<"guest">>}}]
-``
+```
 
 ### `rmq3` is up
 
 #### `rmq1`
 
-`` erlang
+``` erlang
 #amqqueue{name = #resource{virtual_host = <<"/">>,
                            kind = queue,name = <<"rmq-two-queue">>},
           durable = false,auto_delete = false,exclusive_owner = none,
@@ -311,7 +311,7 @@
           state = live,policy_version = 0,
           slave_pids_pending_shutdown = [],vhost = <<"/">>,
           options = #{user => <<"guest">>}}]
-``
+```
 
 #### `rmq3`
 
