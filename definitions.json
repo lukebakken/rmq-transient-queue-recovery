@@ -27,20 +27,20 @@
     "global_parameters": [
         {
             "name": "cluster_name",
-            "value": "rabbit@rmq1"
+            "value": "VESC-967"
         }
     ],
     "policies": [
         {
             "vhost": "/",
             "name": "rmq-two",
-            "pattern": "^rmq-two-.*$",
+            "pattern": "^rmq-two-",
             "apply-to": "queues",
             "definition": {
                 "ha-mode": "nodes",
                 "ha-params": [
-                    "rabbit@rmq2",
-                    "rabbit@rmq3"
+                    "rabbit-2@shostakovich",
+                    "rabbit-3@shostakovich"
                 ],
                 "ha-sync-mode": "automatic"
             },
